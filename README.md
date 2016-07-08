@@ -7,8 +7,8 @@ Build the library with
 
 `g++ libtest.cpp -shared -D MY_EXPORT -o libtest.dll`
 
-Now use it with your program with
+Now add the library in the main build with
 
 `g++ main.cpp libtest.dll`
 
-Remember we can add `-m64` for 64 bit mode or `-m32` for 32 bit mode
+Remember we can add `-m64` for 64 bit mode or `-m32` for 32 bit mode. If in Windows x64, by default the compiler outputs x64 code.
