@@ -5,10 +5,10 @@ Now I know how to create global variables in DYNAMIC libraries and manipulate th
 
 Build the library with
 
-`g++ libtest.cpp -shared -D MY_EXPORT -o libtest.so`
+`g++ libtest.cpp -shared -D MY_EXPORT -o libtest.dll`
 
 Now use it with your program with
 
-`g++ main.cpp libtest.so`
+`g++ main.cpp libtest.dll`
 
 Remember we can add `-m64` for 64 bit mode or `-m32` for 32 bit mode
